@@ -19,10 +19,12 @@ public class ServerManagement : MonoBehaviour
     
     void Start()
     {
-        Screen.sleepTimeout = SleepTimeout.NeverSleep;
+        // Screen.sleepTimeout = SleepTimeout.NeverSleep;
         
         if (!NetworkClient.active)
         {
+            // LoadingBarFill.fillAmount = 1;
+
             manager.StartClient();
         }
     }
