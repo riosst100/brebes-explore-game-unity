@@ -144,7 +144,6 @@ namespace StarterAssets
 
         private void Start()
         {
-            Debug.Log("_animator: "+_animator);
             _cinemachineTargetYaw = CinemachineCameraTarget.transform.rotation.eulerAngles.y;
             
             _hasAnimator = TryGetComponent(out _animator);
@@ -166,7 +165,7 @@ namespace StarterAssets
 
         private void Update()
         {
-            if (!isLocalPlayer) return;
+            if (!isOwned) return;
 
             _hasAnimator = TryGetComponent(out _animator);
 
