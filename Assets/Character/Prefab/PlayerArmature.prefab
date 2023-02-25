@@ -415,7 +415,7 @@ MonoBehaviour:
   TopClamp: 50
   BottomClamp: -30
   CameraAngleOverride: 0
-  LockCameraPosition: 1
+  LockCameraPosition: 0
 --- !u!114 &7433645323655621888
 MonoBehaviour:
   m_ObjectHideFlags: 0
