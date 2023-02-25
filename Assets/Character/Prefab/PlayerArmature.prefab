@@ -385,7 +385,7 @@ MonoBehaviour:
   syncMode: 0
   syncInterval: 0.1
   MoveSpeed: 2
-  SprintSpeed: 2
+  SprintSpeed: 7
   RotationSmoothTime: 0.12
   SpeedChangeRate: 5
   LandingAudioClip: {fileID: 8300000, guid: ff697d3070687ce4583faa0561a145a2, type: 3}
@@ -415,7 +415,7 @@ MonoBehaviour:
   TopClamp: 50
   BottomClamp: -30
   CameraAngleOverride: 0
-  LockCameraPosition: 0
+  LockCameraPosition: 1
 --- !u!114 &7433645323655621888
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -453,7 +453,7 @@ MonoBehaviour:
   leave: 0
   analogMovement: 0
   cursorLocked: 1
-  cursorInputForLook: 1
+  cursorInputForLook: 0
   supportInputManager: 1
   jumpKey: 32
   sprintKey: 304
