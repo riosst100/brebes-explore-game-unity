@@ -452,8 +452,8 @@ MonoBehaviour:
   setting: 0
   leave: 0
   analogMovement: 0
-  cursorLocked: 1
-  cursorInputForLook: 0
+  cursorLocked: 0
+  cursorInputForLook: 1
   supportInputManager: 1
   jumpKey: 32
   sprintKey: 304
