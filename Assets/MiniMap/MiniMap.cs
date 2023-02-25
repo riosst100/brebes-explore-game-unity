@@ -5,7 +5,6 @@ using UnityEngine;
 public class MiniMap : MonoBehaviour
 {
     public Transform player;
-    public float offset_y = 10f;
 
     void LateUpdate() 
     {

@@ -385,7 +385,7 @@ MonoBehaviour:
   syncMode: 0
   syncInterval: 0.1
   MoveSpeed: 2
-  SprintSpeed: 5
+  SprintSpeed: 2
   RotationSmoothTime: 0.12
   SpeedChangeRate: 5
   LandingAudioClip: {fileID: 8300000, guid: ff697d3070687ce4583faa0561a145a2, type: 3}

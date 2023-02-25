@@ -1095,8 +1095,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11248a7e954249e40ad9084980335c64, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
-  offset_y: 10
+  player: {fileID: 36630219002944842, guid: bcd427ca0dc03604eb0b761a9871ff3d, type: 3}
 --- !u!114 &1483508246
 MonoBehaviour:
   m_ObjectHideFlags: 0
