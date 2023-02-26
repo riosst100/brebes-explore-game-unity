@@ -72,6 +72,9 @@ namespace Mirror
                 }
                 // This updates networkAddress every frame from the TextField
                 manager.networkAddress = GUILayout.TextField(manager.networkAddress);
+                #if UNITY_EDITOR
+                manager.networkAddress = "127.0.0.1";
+                #endif
                 GUILayout.EndHorizontal();
 
                 // Server Only

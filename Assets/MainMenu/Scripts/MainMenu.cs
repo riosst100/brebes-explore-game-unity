@@ -12,6 +12,13 @@ public class MainMenu : MonoBehaviour
     [SerializeField] private GameObject loadingScreen;
     [SerializeField] private Image LoadingBarFill;
 
+    void Start() 
+    {
+        Screen.sleepTimeout = SleepTimeout.NeverSleep;
+
+        Debug.Log("always");
+    }
+
     public void MulaiGame() 
     {
         // adsManager.ShowRewardedInterstitialAd();

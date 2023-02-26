@@ -18,12 +18,15 @@ public class ServerManagement : MonoBehaviour
     }
     
     void Start()
-    {
-        // Screen.sleepTimeout = SleepTimeout.NeverSleep;
-        
+    {   
         if (!NetworkClient.active)
         {
             // LoadingBarFill.fillAmount = 1;
+
+            // 192.168.96.12
+            // #if UNITY_EDITOR
+            // manager.networkAddress = "192.168.96.12";
+            // #endif
 
             manager.StartClient();
         }
