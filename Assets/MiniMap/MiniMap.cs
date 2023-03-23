@@ -8,14 +8,16 @@ public class MiniMap : MonoBehaviour
 
     void LateUpdate() 
     {
-        Vector3 newPosition = player.position;
-        newPosition.y = transform.position.y;
-        transform.position = newPosition;
-        
-        Vector3 eulerAngles = transform.eulerAngles;
-        eulerAngles.y = 0;
-        eulerAngles.z = 0;
-        transform.eulerAngles = eulerAngles;
+        if (transform) {
+            Vector3 newPosition = player.position;
+            newPosition.y = transform.position.y;
+            transform.position = newPosition;
+            
+            Vector3 eulerAngles = transform.eulerAngles;
+            eulerAngles.y = 0;
+            eulerAngles.z = 0;
+            transform.eulerAngles = eulerAngles;
+        }
     }
             
 }

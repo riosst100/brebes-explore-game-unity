@@ -27,6 +27,7 @@ public class ServerManagement : MonoBehaviour
             // #if UNITY_EDITOR
             // manager.networkAddress = "192.168.96.12";
             // #endif
+            manager.StartHost();
 
             manager.StartClient();
         }
