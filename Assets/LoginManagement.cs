@@ -1,8 +1,8 @@
 using System;
 using System.Linq;
-using GooglePlayGames;
-using GooglePlayGames.BasicApi;
-using GooglePlayGames.BasicApi.SavedGame;
+// using GooglePlayGames;
+// using GooglePlayGames.BasicApi;
+// using GooglePlayGames.BasicApi.SavedGame;
 using UnityEngine;
 using TMPro;
 
@@ -21,32 +21,37 @@ public class LoginManagement : MonoBehaviour
     //     PlayGamesPlatform.Instance.Authenticate(OnSignInResult);
     // }
 
-    public void playGamesLogin() 
-    {
-        PlayGamesPlatform.DebugLogEnabled = true;
-        PlayGamesPlatform.Activate();
-        PlayGamesPlatform.Instance.Authenticate(OnSignInResult);
-    }
+    // public void playGamesLogin() 
+    // {
+    //     PlayGamesPlatform.DebugLogEnabled = true;
+    //     PlayGamesPlatform.Activate();
+    //     PlayGamesPlatform.Instance.Authenticate(OnSignInResult);
+    // }
 
-    private void OnSignInResult(SignInStatus signInStatus)
-    {
-        // EndStandBy();
-        if (signInStatus == SignInStatus.Success)
-        {
-            statusText.text = "Authenticated. Hello, " + Social.localUser.userName + " (" + Social.localUser.id + ")";
-        }
-        else
-        {
-            statusText.text = "*** Failed to authenticate with " + signInStatus;
-        }
+    // private void OnSignInResult(SignInStatus signInStatus)
+    // {
+    //     // EndStandBy();
+    //     if (signInStatus == SignInStatus.Success)
+    //     {
+    //         statusText.text = "Authenticated. Hello, " + Social.localUser.userName + " (" + Social.localUser.id + ")";
+    //     }
+    //     else
+    //     {
+    //         statusText.text = "*** Failed to authenticate with " + signInStatus;
+    //     }
 
-        // ShowEffect(signInStatus == SignInStatus.Success);
+    //     // ShowEffect(signInStatus == SignInStatus.Success);
+    // }
+
+    public void exitGame() 
+    {
+        Application.Quit();
     }
 
     public void openPrivacyPolicyPopup() 
     {
-        Firebase.Analytics.FirebaseAnalytics
-  .LogEvent(Firebase.Analytics.FirebaseAnalytics.EventLogin);
+        // Firebase.Analytics.FirebaseAnalytics
+//   .LogEvent(Firebase.Analytics.FirebaseAnalytics.EventLogin);
 
         privacyPolicyPopup.SetActive(true);
     }
@@ -58,8 +63,8 @@ public class LoginManagement : MonoBehaviour
 
     public void openUserAgreementPopup() 
     {
-        Firebase.Analytics.FirebaseAnalytics
-  .LogEvent(Firebase.Analytics.FirebaseAnalytics.EventLogin);
+        // Firebase.Analytics.FirebaseAnalytics
+//   .LogEvent(Firebase.Analytics.FirebaseAnalytics.EventLogin);
 
         userAgreementPopup.SetActive(true);
     }
