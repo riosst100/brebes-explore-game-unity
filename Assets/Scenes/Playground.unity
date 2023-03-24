@@ -1180,7 +1180,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: f3e941e59def9f1499ac279302911283,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f3e941e59def9f1499ac279302911283, type: 3}
@@ -2616,8 +2616,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4e01e37b998feb4b8bfe2dc5ae1067e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeMultiplier: 3000
-  startHour: 15
+  timeMultiplier: 0
+  startHour: 12
   timeText: {fileID: 1483508243}
   sunLight: {fileID: 1483508307}
   sunriseHour: 6
@@ -5666,7 +5666,7 @@ Light:
     m_Type: 2
     m_Resolution: -1
     m_CustomResolution: -1
-    m_Strength: 0.6
+    m_Strength: 0.8
     m_Bias: 0.05
     m_NormalBias: 0.4
     m_NearPlane: 0.1
@@ -7238,7 +7238,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!64 &1674470303
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -7260,7 +7260,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1674470302}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -7543,6 +7543,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 6feae64566404184eb1c1850c6686585,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 6feae64566404184eb1c1850c6686585,
+        type: 3}
+      propertyPath: m_DynamicOccludee
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 6feae64566404184eb1c1850c6686585,
+        type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 6feae64566404184eb1c1850c6686585,
         type: 3}
@@ -8106,8 +8121,8 @@ Transform:
   m_GameObject: {fileID: 1969930322}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 2, z: 0}
-  m_LocalScale: {x: 8, y: 4, z: 8}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 4, y: 2, z: 4}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 643335963}
   m_RootOrder: 0

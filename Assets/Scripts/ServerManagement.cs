@@ -42,7 +42,7 @@ public class ServerManagement : MonoBehaviour
     {
         if (_input.leave) {
             manager.StopClient();
-            SceneManager.LoadScene("MainMenu");
+            SceneManager.LoadScene("Login");
         }
     }
 }

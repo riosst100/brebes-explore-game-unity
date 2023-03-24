@@ -1,16 +1,22 @@
-using System;
-using System.Linq;
 // using GooglePlayGames;
 // using GooglePlayGames.BasicApi;
 // using GooglePlayGames.BasicApi.SavedGame;
-using UnityEngine;
 using TMPro;
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class LoginManagement : MonoBehaviour
 {
     [SerializeField] private GameObject privacyPolicyPopup;
     [SerializeField] private GameObject userAgreementPopup;
-    [SerializeField] private TextMeshProUGUI statusText;
+    // [SerializeField] private TextMeshProUGUI statusText;
+    [Header("Screens")]
+    // [SerializeField] private AdmobAdsManager adsManager;
+    [SerializeField] private GameObject loadingScreen;
+    [SerializeField] private Image LoadingBarFill;
 
     // private bool mStandby = false;
 
@@ -42,6 +48,31 @@ public class LoginManagement : MonoBehaviour
 
     //     // ShowEffect(signInStatus == SignInStatus.Success);
     // }
+    void Start() 
+    {
+        Screen.sleepTimeout = SleepTimeout.NeverSleep;
+    }
+
+    public void startGame() 
+    {
+        loadingScreen.SetActive(true);
+
+        StartCoroutine(LoadSceneAsync("Playground"));
+    }
+
+    IEnumerator LoadSceneAsync(string sceneName) 
+    {
+        AsyncOperation loadOperation = SceneManager.LoadSceneAsync(sceneName);
+
+        while (!loadOperation.isDone) 
+        {
+            float progressValue = Mathf.Clamp01(loadOperation.progress / 0.9f);
+
+            LoadingBarFill.fillAmount = progressValue;
+
+            yield return null;
+        }
+    }
 
     public void exitGame() 
     {
