@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:keep="@string/gcm_defaultSenderId,@string/google_storage_bucket,@string/project_id,@string/google_api_key,@string/google_crash_reporting_api_key,@string/google_app_id,@string/default_android_client_id,@string/default_web_client_id">
+  <string name="gcm_defaultSenderId" translatable="false">237393369917</string>
+  <string name="google_storage_bucket" translatable="false">brebes-explore.appspot.com</string>
+  <string name="project_id" translatable="false">brebes-explore</string>
+  <string name="google_api_key" translatable="false">AIzaSyDA0_xoq5ehg10r9EfYgCXwEFO5r24i2xM</string>
+  <string name="google_crash_reporting_api_key" translatable="false">AIzaSyDA0_xoq5ehg10r9EfYgCXwEFO5r24i2xM</string>
+  <string name="google_app_id" translatable="false">1:237393369917:android:89862f9a3bec4101c2c354</string>
+  <string name="default_android_client_id" translatable="false">237393369917-njc6jre9j682nhnjces26fc90g2rusrt.apps.googleusercontent.com</string>
+  <string name="default_web_client_id" translatable="false">237393369917-v6gsekc881l1bpf6d9fflurmpu3ld5e4.apps.googleusercontent.com</string>
+</resources>

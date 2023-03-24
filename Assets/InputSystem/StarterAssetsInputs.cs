@@ -72,6 +72,11 @@ namespace StarterAssets
 		if (!this.supportInputManager)
 			return;
 
+		#if UNITY_EDITOR
+		horzLookSensitivity = 5;
+		vertLookSensitivity = 5;
+		#endif
+
 		this.MoveInput(new Vector2(ControlFreak2.CF2Input.GetAxis("Horizontal"), ControlFreak2.CF2Input.GetAxis("Vertical")));
 		this.LookInput(new Vector2(
 			ControlFreak2.CF2Input.GetAxis("Mouse X") * this.horzLookSensitivity, 

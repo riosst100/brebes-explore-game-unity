@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "237393369917",
+    "project_id": "brebes-explore",
+    "storage_bucket": "brebes-explore.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:237393369917:android:89862f9a3bec4101c2c354",
+        "android_client_info": {
+          "package_name": "com.inovasiaktif.brebesexplore"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "237393369917-njc6jre9j682nhnjces26fc90g2rusrt.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.inovasiaktif.brebesexplore",
+            "certificate_hash": "7ca7ad7fd034417fee32a1aba24a72ed99d352eb"
+          }
+        },
+        {
+          "client_id": "237393369917-v6gsekc881l1bpf6d9fflurmpu3ld5e4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDA0_xoq5ehg10r9EfYgCXwEFO5r24i2xM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "237393369917-v6gsekc881l1bpf6d9fflurmpu3ld5e4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -6,6 +6,7 @@ using ControlFreak2;
 using UnityEngine.SceneManagement;
 using Mirror;
 using Cinemachine;
+using TMPro;
 
 /* Note: animations are called via the controller for both the character and capsule using animator null checks
  */
@@ -108,6 +109,9 @@ namespace StarterAssets
         private StarterAssetsInputs _input;
         private GameObject _mainCamera;
 
+        public TextMeshPro _playerNumber;
+        public TextMeshProUGUI playerName;
+
         private const float _threshold = 0.01f;
 
         private bool _hasAnimator;
@@ -124,7 +128,6 @@ namespace StarterAssets
             }
         }
 
-
         private void Awake()
         {
             // get a reference to our main camera
@@ -134,8 +137,16 @@ namespace StarterAssets
             }
         }
 
+        public void SetPlayerName(string name)
+        {
+            Debug.Log("PLAYER: "+name);
+            playerName.text = name;
+        }
+
         public override void OnStartLocalPlayer() 
         {
+            // _playerNumber.text = NetworkServer.connections.Count.ToString();
+
             GameObject.FindGameObjectWithTag("PlayerFollowCamera").GetComponent<CinemachineVirtualCamera>().Follow = transform.GetChild(0).transform;
             GameObject.FindGameObjectWithTag("MiniMapCamera").GetComponent<MiniMap>().player = transform.GetChild(0).transform;
         }
@@ -163,6 +174,8 @@ namespace StarterAssets
 
         private void Update()
         {
+            _playerNumber.transform.rotation = Quaternion.Euler(90, 0, 0);
+            
             if (!isOwned) return;
 
             _hasAnimator = TryGetComponent(out _animator);
