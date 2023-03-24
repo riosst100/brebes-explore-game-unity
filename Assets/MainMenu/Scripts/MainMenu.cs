@@ -15,8 +15,6 @@ public class MainMenu : MonoBehaviour
     void Start() 
     {
         Screen.sleepTimeout = SleepTimeout.NeverSleep;
-
-        Debug.Log("always");
     }
 
     public void MulaiGame() 
